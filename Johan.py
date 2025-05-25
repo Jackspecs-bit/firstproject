@@ -1,3 +1,12 @@
+import random
+
+no_responses = [
+    "No problem! Feel free to browse our menu at your leisure!",
+    "Sure, take your time. If you have any questions, let me know.",
+    "Thank you for taking a look. Hope to see you next time."
+]
+
+print(random)
 #No problem! Feel free to browse our menu at your leisure
 user_name = (input("""Hello there:-)
 What is your name?"""))
@@ -10,7 +19,7 @@ if menu_response == "y":
     print("""Great! For flavors we have Mint, Blueberry, Cherry and Cappucino
 And for drinks we have Soda, Hot Tea and Coffee""")
 elif menu_response == "n":
-        print("No problem! Feel free to browse our menu at your leisure!")
+    print(no_responses[random.randint(0,2)])
 else: 
     print("Sorry I didn't quite catch that. Please type 'y' for Yes or 'n' for No.")
 #Flavors =[" Mint", "Cherry"," Capaocinno"]
